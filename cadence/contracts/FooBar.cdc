@@ -23,11 +23,11 @@ pub contract FooBar {
             self.ownedNFTs[token.id] <-! token
         }
 
-        pub fun withdraw(id: UInt64): @NFT? {
+        pub fun withdraw(withdrawID: UInt64): @NFT? {
             // let token <- self.ownedNFTs.remove(key: id) ?? panic("Token not in collection")
 
             // return <- token
-            return <-self.ownedNFTs.remove(key: id)
+            return <-self.ownedNFTs.remove(key: withdrawID)
         }
 
         pub fun getIDs(): [UInt64] {
@@ -43,7 +43,7 @@ pub contract FooBar {
         }
     }
     
-    pub fun createCollection(): @Collection {
+    pub fun createEmptyCollection(): @Collection {
         return <-create Collection()
     }
 
