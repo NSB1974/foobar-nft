@@ -10,7 +10,7 @@ transaction(recipient: Address, id: UInt64) {
             .borrow<&FooBar.Collection{NonFungibleToken.CollectionPublic}>()
             ?? panic("Could not borrow a reference to the recipient's collection")
 
-        recipientReference.deposit(token: <- collection.withdraw(id: id))
+        recipientReference.deposit(token: <- collection.withdraw(withdrawID: id))
     }
 
     execute {
