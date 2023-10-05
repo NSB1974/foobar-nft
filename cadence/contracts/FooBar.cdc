@@ -1,4 +1,7 @@
-pub contract FooBar {
+import "NonFungibleToken"
+pub contract FooBar: NonFungibleToken {
+
+    pub event ContractInitialized()
 
     pub var totalSupply: UInt64
 
@@ -57,6 +60,7 @@ pub contract FooBar {
 
     init() {
         self.totalSupply = 0
+        emit ContractInitialized()
         self.account.save(<- create NFTMinter(), to: /storage/NFTMinter)
     }
 }
