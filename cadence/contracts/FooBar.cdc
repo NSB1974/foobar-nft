@@ -21,7 +21,7 @@ pub contract FooBar: NonFungibleToken {
         pub let thumbnail: String
 
         init(name: String, description: String, thumbnail: String) {
-            self.id = FooBar.totalSupply
+            self.id = self.uuid
             self.name = name
             self.description = description
             self.thumbnail = thumbnail

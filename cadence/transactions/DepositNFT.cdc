@@ -11,7 +11,7 @@ transaction(recipient: Address) {
             .borrow<&FooBar.Collection{NonFungibleToken.CollectionPublic}>()
             ?? panic("Could not borrow a reference to the recipient's collection")
 
-        recipientReference.deposit(token: <- nftMinter.createNFT())
+        recipientReference.deposit(token: <- nftMinter.createNFT(name: "test", description: "something", thumbnail: "thumbnail"))
     }
 
     execute {
