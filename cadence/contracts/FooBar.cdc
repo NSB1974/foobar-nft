@@ -14,7 +14,7 @@ pub contract FooBar: NonFungibleToken {
         pub fun resolveView(_ view:Type): AnyStruct?
     }
 
-    pub resource NFT: NonFungibleToken.INFT, ViewResolver {
+    pub resource NFT: NonFungibleToken.INFT, MetadataViews.Resolver {
         pub let id: UInt64
         pub let name: String
         pub let description: String
