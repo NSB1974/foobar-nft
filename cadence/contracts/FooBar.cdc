@@ -1,7 +1,7 @@
 import "NonFungibleToken"
 import "MetadataViews"
 
-pub contract FooBar: NonFungibleToken {
+access(all) contract FooBar: NonFungibleToken {
 
     pub event ContractInitialized()
     pub event Withdraw(id: UInt64, from: Address?)
