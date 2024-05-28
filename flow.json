@@ -29,14 +29,6 @@
 		"emulator-account": {
 			"address": "f8d6e0586b0a20c7",
 			"key": "6d12eebfef9866c9b6fa92b97c6e705c26a1785b1e7944da701fc545a51d4673"
-		},
-		"test-acct": {
-			"address": "179b6b1cb6755e31",
-			"key": "18c56091d755254c1be4d6086a1d85ff8f1c644715cf454304c9f14cb9b7bc26"
-		},
-		"test-acct-2": {
-			"address": "f3fcd2c1a78f5eee",
-			"key": "c0311b3b596bc43112702569700a545f7125ad955c3860e2634c1da840dcd5e1"
 		}
 	},
 	"deployments": {
