@@ -1,0 +1,7 @@
+flow-c1 setup foobar-nft
+/cadence
+    /contracts
+    /scripts
+    /transactions
+    /tests
+flow.json
